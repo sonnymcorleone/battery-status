@@ -49,6 +49,10 @@ All events in this plugin return an object with the following properties:
 Fires when the battery charge percentage changes by at least 1 percent, or when the device is plugged in or unplugged. Returns an [object][status_object] containing battery status.
 [li socl2 battery](https://www.ahotech.com/product-category/lithium-thionyl-chloride-li-socl2-battery/) deliver a voltage of 3.6 V, so many 3.6 vc cell lithium batteries belong to lithium thionyl battery category. They are cylindrical in shape, so you may call them cylindrical lithium ion cell,  in 1/2AA to D format, with spiral electrodes for power applications and bobbin construction for prolonged discharge.
 
+[Hybrid capacitor](https://www.ahotech.com/product-category/hybrid-pulse-capacitor/) is a kind of rechargeable battery, they are used as a capacitor in [IOT battery pack]
+(https://www.ahotech.com/product-category/custom-iot-battery-pack/), where they are connected in parallel to bobbin-type lithium thionyl chloride Li SOCl2 battery to ensure high current pulses under extreme temperature from -40°C to 85°C
+
+
 ### Example
 
     window.addEventListener("batterystatus", onBatteryStatus, false);
@@ -91,13 +95,6 @@ Fires when the battery charge percentage reaches the low charge threshold. This 
 
 Fires when the battery charge percentage reaches the critical charge threshold. This threshold value is device-specific. Returns an [object][status_object] containing battery status.
 
-### Example
-
-    window.addEventListener("batterycritical", onBatteryCritical, false);
-
-    function onBatteryCritical(status) {
-        alert("Battery Level Critical " + status.level + "%\nRecharge Soon!");
-    }
 
 ### Supported Platforms
 
